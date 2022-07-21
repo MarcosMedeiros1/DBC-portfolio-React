@@ -3,7 +3,6 @@ import HeadPerfil from "../headPerfil/HeadPerfil";
 import Repositorios from "../repositorios/Repositorios";
 
 const Main = ({ dados }) => {
-  console.log(dados);
   return (
     <main className={styles.container}>
       <HeadPerfil
