@@ -39,3 +39,31 @@
   align-items: center;
   gap: 8px;
 }
+
+@media (max-width: 800px) {
+  .perfil {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    padding: 24px 8px;
+    text-align: center;
+  }
+
+  .follow {
+    justify-content: center;
+  }
+
+  .infos {
+    gap: 32px;
+  }
+}
+
+@media (max-width: 456px) {
+  .contato {
+    display: grid;
+  }
+
+  .git {
+    display: grid;
+  }
+}

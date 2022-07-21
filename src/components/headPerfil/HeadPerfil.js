@@ -13,14 +13,15 @@ const HeadPerfil = (props) => {
           <h1>{props.name}</h1>
           <p>{props.bio}</p>
         </div>
-        <div>
-          <span>🏢{props.company}</span> {" · "}
-          <span>📧 marcos.medeiros@dbccompany.com.br</span>
+
+        <div className={styles.contato}>
+          <span>🏢{props.company}</span>
+          {" · "}
+          <span>📧marcos.medeiros@dbccompany.com.br</span>
         </div>
-        <span>
-          🐙{" "}
+
+        <span className={styles.git}>
           <a href={props.html_url} target="blank">
-            {" "}
             github.com/{props.login}
           </a>
           {" · "}
@@ -39,7 +40,7 @@ const HeadPerfil = (props) => {
               Followers: {props.followers}
             </a>
           </span>
-          {"·"}
+          {" · "}
           <span>
             <a
               href="https://github.com/MarcosMedeiros1?tab=following"
