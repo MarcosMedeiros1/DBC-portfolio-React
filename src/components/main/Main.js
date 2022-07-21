@@ -3,6 +3,7 @@ import HeadPerfil from "../headPerfil/HeadPerfil";
 import Repositorios from "../repositorios/Repositorios";
 
 const Main = ({ dados }) => {
+  console.log(dados);
   return (
     <main className={styles.container}>
       <HeadPerfil
@@ -11,9 +12,13 @@ const Main = ({ dados }) => {
         bio={dados.bio}
         location={dados.location}
         company={dados.company}
+        html_url={dados.html_url}
+        created_at={dados.created_at}
         login={dados.login}
+        followers={dados.followers}
+        following={dados.following}
       />
-      <h2>Repositórios </h2>
+      <h2>Meus projetos </h2>
       <Repositorios repos={dados.repos_url} />
     </main>
   );

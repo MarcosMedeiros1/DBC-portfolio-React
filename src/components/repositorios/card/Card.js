@@ -2,11 +2,16 @@ import styles from "./Card.module.css";
 
 const Card = (props) => {
   return (
-    <a href={props.href} target="blank" className={styles.card}>
-      <h3>{props.name}</h3>
+    <div className={styles.card}>
+      <h3>
+        <a href={props.href} target="blank">
+          <span>{props.name}</span>
+        </a>{" "}
+        🔗
+      </h3>
       <p>{props.description}</p>
       <span>{props.language}</span>
-    </a>
+    </div>
   );
 };
 

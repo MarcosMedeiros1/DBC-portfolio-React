@@ -24,3 +24,18 @@
   display: grid;
   gap: 16px;
 }
+
+.infos a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.infos a:hover {
+  text-decoration: underline;
+}
+
+.follow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
