@@ -1,17 +1,17 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import "./App.css";
-import Main from "./components/Main";
+import Main from "./components/main/Main";
 
 function App() {
-  const [data, setData] = useState();
+  const [dados, setDados] = useState({});
+
   const setup = async () => {
     try {
       const { data } = await axios.get(
         "https://api.github.com/users/MarcosMedeiros1",
       );
-
-      setData(data);
+      setDados(data);
     } catch (e) {
       console.log(e);
     }
@@ -23,7 +23,7 @@ function App() {
 
   return (
     <div>
-      <Main data={data} />
+      <Main dados={dados} />
     </div>
   );
 }

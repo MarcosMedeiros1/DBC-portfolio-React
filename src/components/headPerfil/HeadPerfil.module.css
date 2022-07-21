@@ -1,0 +1,26 @@
+.perfil {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 32px;
+  padding: 20px 60px;
+  border-radius: 8px;
+  background-color: #60a3bc;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.avatar {
+  display: flex;
+  outline: 4px solid #0a3d62;
+  border-radius: 100%;
+}
+
+.avatar > img {
+  width: 160px;
+  border-radius: 100%;
+}
+
+.infos {
+  display: grid;
+  gap: 16px;
+}
